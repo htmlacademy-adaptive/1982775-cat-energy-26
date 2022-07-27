@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Georgii KARAPETOV](https://up.htmlacademy.ru/adaptive/26/user/1982775).
-* Наставник: `Неизвестно`.
+- Студент: [Georgii KARAPETOV](https://up.htmlacademy.ru/adaptive/26/user/1982775).
+- Наставник: `Алексей. Елькин`.
 
 ---
 
