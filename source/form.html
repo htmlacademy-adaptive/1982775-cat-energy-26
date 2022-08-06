@@ -13,7 +13,6 @@
       <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
       <img src="img/logo/logo-text.svg" width="128" height="24" alt="" aria-hidden="true">
     </a>
-    <p class="main-header__cat">CAT<span class="main-header__energy">ENERGY</span></p>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
@@ -38,32 +37,32 @@
       <div class="form__wrapper">
         <form class="form__header" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__personality">
-            <ul class="form__list1">
+            <ul class="form__list-info">
               <li class="form__item-name">
                 <label class="form__name" for="name">ИМЯ:*</label>
-                <input class="form__name-input" id="name" type="text" placeholder="барсик">
+                <input class="form__name-input" id="name" type="text" placeholder="барсик" required>
               </li>
               <li class="form__item-weight">
                 <label class="form__weight" for="weight">Вес (кг):*</label>
-                <input class="form__weight-input" id="weight" type="text" placeholder="7">
+                <input class="form__weight-input" id="weight" type="number" min="1" max="15" placeholder="7" required>
               </li>
               <li class="form__item-age">
                 <label class="form__age" for="age">Возраст (лет):</label>
-                <input class="form__age-input" id="age" type="text" placeholder="7">
+                <input class="form__age-input" id="age" type="number" min="1" max="25" placeholder="7">
               </li>
             </ul>
             <!-- радиокнопки -->
-            <ul class="form__list2">
+            <ul class="form__list-health">
               <li class="form__item-skinny">
-                <input class="form__skinny-input" id="skinny" type="radio" checked>
+                <input class="form__skinny-input" name="radio" value="skinny" id="skinny" type="radio" checked>
                 <label class="form__skinny" for="skinny">похудение</label>
               </li>
               <li class="form__item-mass">
-                <input class="form__mass-input" id="mass" type="radio">
+                <input class="form__mass-input" name="radio" value="mass" id="mass" type="radio">
                 <label class="form__mass" for="mass">Набор массы</label>
               </li>
               <li class="form__item-advise">
-                <input class="form__advise-input" id="advise" type="radio">
+                <input class="form__advise-input" name="radio" value="advise" id="advise" type="radio">
                 <label class="form__advise" for="advise">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
@@ -72,13 +71,13 @@
           <fieldset class="form__contacts fieldset-row">
             <legend class="form__contacts-head">Контактные данные (владельца кота)</legend>
             <ul class="form__contacts-list">
-              <li class="form__contacts-item1">
+              <li class="form__item-email">
                 <label class="form__email" for="email">E-mail:*</label>
-                <input class="form__email-input" type="email" id="email" placeholder="кuklachev@gmail.com">
+                <input class="form__email-input" type="email" id="email" placeholder="кuklachev@gmail.com" required>
               </li>
-              <li class="form__contacts-item2">
+              <li class="form__item-tlf">
                 <label class="form__tel" for="tel">Телефон:*</label>
-                <input class="form__tel-input" type="tel" id="tel" placeholder="8 (960) 900-60-90">
+                <input class="form__tel-input" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
@@ -146,7 +145,7 @@
         <li class="social-list__telegram"><a class="social-list__telegram-btn" href="https://t.me/htmlacademy"></a>
         </li>
       </ul>
-      <a class="social-list__sponsor" href="#">HTML Academy</a>
+      <a class="sponsor" href="#">HTML Academy</a>
     </div>
   </footer>
 </body>
