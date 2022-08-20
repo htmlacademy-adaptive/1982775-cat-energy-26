@@ -1,0 +1,253 @@
+.form__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 37px;
+}
+
+.form__subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 39px;
+}
+
+.form__list-info {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__list-info::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  left: 0;
+  bottom: -20px;
+}
+
+.form__item {
+  display: flex;
+  margin-bottom: 14px;
+  align-items: center;
+}
+
+.form__item:last-child {
+  margin-bottom: 52px;
+}
+
+.form__list-label {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-right: 13px;
+  min-width: fit-content;
+}
+
+.form__list-input {
+  width: 100%;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 11px 14px 11px 14px;
+  border: 1px solid #e7e7e7e7;
+  margin-left: auto;
+}
+
+// радиокнопки
+
+.form__radio {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__radio::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  left: 0;
+  bottom: -30px;
+}
+
+.form__radio-item {
+  margin-bottom: 25px;
+}
+
+.form__radio-item:last-child {
+  margin-bottom: 51px;
+}
+
+.form__radio-label::before {
+  position: absolute;
+  top: 6px;
+  left: -50px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
+}
+
+.form__radio-label {
+  position: relative;
+  text-transform: uppercase;
+  color: #222222;
+  margin-left: 65px;
+}
+
+.control-mark {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  left: -59px;
+  top: -2px;
+}
+
+// контактные данные
+
+.form__contacts-head {
+  padding: 0;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.form__contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__contact-item {
+  position: relative;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.form__contact-item:last-child {
+  margin-bottom: 23px;
+}
+
+.form__contact-label {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.form__contact-input {
+  flex-grow: 1;
+  font-family: $oswald;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 11px 14px 11px 14px;
+  border: 1px solid #cdcdcd;
+  font-size: 16px;
+}
+
+.mail {
+  position: absolute;
+  width: 18px;
+  height: 13px;
+  background-image: url("../img/mail-icon.svg");
+  right: 15px;
+}
+
+.tel {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/tel-icon.svg");
+  right: 13px;
+}
+
+// Контактные данные
+
+
+.form__personality,
+.form__contacts,
+.form__discription,
+.form__additional {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__discription-head {
+  padding: 0;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 47px;
+}
+
+.form__discription-text {
+  width: 100%;
+  padding: 10px 13px;
+  border: 1px solid #e7e7e7;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 22px;
+}
+
+// Дополнительно
+
+.form__additional-head {
+  padding: 0;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 39px;
+}
+
+.form__additional-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__additional-input {
+  margin: 0;
+}
+
+.form__additional-label {
+  text-transform: uppercase;
+  margin-left: 66px;
+}
+
+.form__additional-item {
+  margin-bottom: 25px;
+}
+
+.form__additional-item:last-child {
+  margin-bottom: 41px;
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 21px;
+}
+
+.form__button-mark {
+  display: block;
+  font-family: $arial;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 32px;
+}

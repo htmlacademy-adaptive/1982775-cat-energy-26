@@ -1,0 +1,81 @@
+.result__wrapper {
+  background: #eaeaea;
+  padding-top: 25px;
+}
+
+.result__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.result__discription {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.result__weight-days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.result__block {
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.result__data {
+  margin: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding: 14px 42px 17px 42px;
+}
+
+.result__data--days {
+  padding: 15px 21px 16px 20px;
+}
+
+.result__indicators {
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #444444;
+  background-color: #eaeaea;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto 0;
+  margin-top: -7px;
+  width: fit-content;
+}
+
+.result__total {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.result__total-money {
+  margin-left: 3px;
+}
+
+.result__slider{
+  padding-bottom: 40px;
+}
+
+.result__slider-line {
+  margin: 0 auto;
+  width: 4px;
+  height: 256px;
+  background: #666666;
+  border-radius: 2px;
+}

@@ -1,0 +1,55 @@
+.progress__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 42px;
+}
+
+.progress__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: $arial;
+  font-size: 14px;
+}
+
+.progress__discription {
+  margin: 0;
+  width: 199px;
+}
+
+.progress__item {
+  position: relative;
+  margin-bottom: 26px;
+  padding-left: 80px;
+}
+
+.progress__item::before {
+  position: absolute;
+  content: "";
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  left: 0;
+  top: -5px;
+}
+
+.progress__item--leaf::before {
+  position: absolute;
+  background-image: url("../img/leaf.svg");
+}
+
+.progress__item--instant::before {
+  background-image: url("../img/instant.svg");
+}
+
+.progress__item--food::before {
+  background-image: url("../img/food.svg");
+}
+
+.progress__item--timer::before {
+  background-image: url("../img/timer.svg");
+}

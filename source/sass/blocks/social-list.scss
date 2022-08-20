@@ -1,0 +1,59 @@
+.social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  list-style: none;
+  padding-bottom: 49px;
+}
+
+.social-list__vk-btn {
+  display: block;
+  text-align: center;
+  background-image: url("../img/social/vk.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 19px;
+  margin-right: 26px;
+}
+
+.social-list__youtube-btn {
+  display: block;
+  text-align: center;
+  background-image: url("../img/social/youtube.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 19px;
+  margin-right: 26px;
+}
+
+.social-list__telegram-btn {
+  display: block;
+  text-align: center;
+  background-image: url("../img/social/telegram.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 19px;
+}
+
+
+.social-list::before {
+  content: "";
+  position: absolute;
+  background-color: #d9d9d9;
+  width: 280px;
+  height: 1px;
+  left: 19px;
+  top: -28px;
+}
+
+.social-list::after {
+  content: "";
+  position: absolute;
+  background-color: #d9d9d9;
+  width: 280px;
+  height: 1px;
+  left: 19px;
+  top: 45px;
+}
