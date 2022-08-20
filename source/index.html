@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page">
   <header class="main-header">
     <a class="main-header__logo" href="#">
       <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy" />
@@ -39,10 +40,11 @@
           питание для котов
         </h1>
         <p class="cover__slogan">Занялся собой? Займись котом!</p>
+
+        <img src="img/cover-product.png" width="280" height="270" alt="Натуральный продукт Cat Energy" />
         <button class="cover__button button" type="button">
           подобрать программу
         </button>
-        <img src="img/cover-product.png" width="280" height="270" alt="Натуральный продукт Cat Energy" />
       </div>
     </section>
     <section class="advantages">
@@ -64,7 +66,6 @@
         </p>
         <a class="advantages__button" href="#">каталог pro</a>
       </div>
-      gitmo
     </section>
     <section class="progress">
       <div class="progress__wrapper">
@@ -107,31 +108,37 @@
           этом он не менял своих привычек и по-прежнему спит по 16 часов в
           день.
         </p>
-        <div class="result__weight">
-          <p class="result__kg">5 КГ</p>
-          <p class="result__discription">снижение веса</p>
-        </div>
-        <div class="result__days">
-          <p class="result__day">60 ДНЕЙ</p>
-          <p class="result__spent-time">затрачено времени</p>
+        <div class="result__weight-days">
+          <div class="result__block">
+            <p class="result__data">5 КГ</p>
+            <p class="result__indicators">снижение <br> веса</p>
+          </div>
+          <div class="result__block">
+            <p class="result__data result__data--days">60 ДНЕЙ</p>
+            <p class="result__indicators">затрачено <br> времени</p>
+          </div>
         </div>
         <p class="result__total">
-          Затраты на питание:<span class="result__money">15 000 РУБ.</span>
+          Затраты на питание:<span class="result__total-money">15 000 РУБ.</span>
         </p>
+        <div class="result__slider">
+          <div class="result__slider-line">
+          </div>
+        </div>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <h3 class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</h3>
         <h2 class="visually-hidden">Наш адрес.</h2>
         <p class="contacts__adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          ул. Большая <br> Конюшенная, д. 19/8 Санкт-Петербург
         </p>
       </div>
       <div class="map-responsive">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533252!2d30.320858715776165!3d59.938716481876185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2ses!4v1659444562271!5m2!1sru!2ses"
-          width="320" height="362" style="border: 0" allowfullscreen="" loading="lazy"
+          width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
@@ -142,13 +149,13 @@
       <a class="main-footer__logo" href="#"><img class="main-footer__logo-img" src="img/logo/logo-text.svg"
           alt="Логотип Cat Energy" /></a>
       <ul class="social-list">
-        <li class="social-list__vk">
+        <li class="social-list__item">
           <a class="social-list__vk-btn" href="https://vk.com/htmlacademy"></a>
         </li>
-        <li class="social-list__youtube">
-          <a class="social-list__youtub-btn" href="https://www.youtube.com/user/htmlacademy"></a>
+        <li class="social-list__item">
+          <a class="social-list__youtube-btn" href="https://www.youtube.com/user/htmlacademy"></a>
         </li>
-        <li class="social-list__telegram">
+        <li class="social-list__item">
           <a class="social-list__telegram-btn" href="https://t.me/htmlacademy"></a>
         </li>
       </ul>

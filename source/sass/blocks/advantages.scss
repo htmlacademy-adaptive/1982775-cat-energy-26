@@ -1,0 +1,70 @@
+.advantages__wrapper {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  min-height: 266px;
+  background-color: #f2f2f2;
+}
+
+.advantages__wrapper--slim::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 53px;
+  background-image: url("../img/cat_slim-mob.svg");
+}
+
+.advantages__wrapper--mass::before {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 50px;
+  background-image: url("../img/cat_mass-mob.svg");
+}
+
+.advantages__title {
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.advantages__discription {
+  margin: 0;
+  font-family: $arial;
+  font-size: 14px;
+  color: #444444;
+  margin-top: 29px;
+  margin-bottom: 42px;
+}
+
+.advantages__discription::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 1px;
+  background-color: #d9d9d9;
+  bottom: 96px;
+  left: 39px;
+}
+
+.advantages__button {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages__button::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 53px;
+  background-image: url("../img/arrow-btn.svg");
+  background-repeat: no-repeat;
+  left: 95px;
+  top: 6px;
+}
