@@ -4,6 +4,11 @@
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .progress__list {
@@ -12,17 +17,52 @@
   list-style: none;
   font-family: $arial;
   font-size: 14px;
+  margin-bottom: 53px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 280px 280px;
+    column-gap: 55px;
+  }
+}
+
+.progress__list::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .progress__discription {
   margin: 0;
   width: 199px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 260px;
+  }
 }
 
 .progress__item {
   position: relative;
   margin-bottom: 26px;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding-left: 0;
+    padding-top: 108px;
+  }
 }
 
 .progress__item::before {
@@ -34,11 +74,15 @@
   background-position: 50%;
   background-repeat: no-repeat;
   left: 0;
-  top: -5px;
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .progress__item--leaf::before {
-  position: absolute;
   background-image: url("../img/leaf.svg");
 }
 
@@ -52,4 +96,20 @@
 
 .progress__item--timer::before {
   background-image: url("../img/timer.svg");
+}
+
+.progress__background-number {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    font-family: $oswald;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    top: -38px;
+    right: 89px;
+  }
 }

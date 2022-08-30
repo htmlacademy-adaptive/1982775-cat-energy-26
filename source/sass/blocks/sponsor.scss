@@ -1,0 +1,28 @@
+.sponsor {
+  display: block;
+  position: relative;
+  font-family: $arial;
+  text-decoration: none;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-right: 49px;
+  }
+}
+
+.sponsor::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-html-academy.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 34px;
+  top: -6px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    top: -6px;
+    right: 0;
+  }
+}
