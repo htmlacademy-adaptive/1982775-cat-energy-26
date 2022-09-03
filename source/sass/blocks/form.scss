@@ -17,6 +17,10 @@
     line-height: 60px;
     margin-bottom: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .form__subtitle {
@@ -34,11 +38,20 @@
   }
 }
 
+.form__personality {
+  display: flex;
+  justify-content: space-between;
+}
+
 .form__list-info {
   position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+  }
 }
 
 .form__item {
@@ -53,6 +66,10 @@
 
 .form__item:last-child {
   margin-bottom: 52px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__list-label {
@@ -102,6 +119,12 @@
     border: 1px solid #e7e7e7;
     margin-bottom: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    height: 196px;
+    margin-bottom: 69px;
+  }
 }
 
 .form__radio-item {
@@ -109,6 +132,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
   }
 }
 
@@ -164,6 +191,15 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .form__contact-item {
@@ -175,6 +211,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    min-width: 557px;
+  }
 }
 
 .form__contact-item:last-child {
@@ -182,6 +223,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -300,6 +345,11 @@
     grid-template-columns: auto auto;
     margin-bottom: 17px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__additional-input {
@@ -341,6 +391,12 @@
     font-size: 20px;
     margin-right: 61px;
     margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 55%;
+    margin-right: 81px;
+    margin-bottom: 82px;
   }
 }
 

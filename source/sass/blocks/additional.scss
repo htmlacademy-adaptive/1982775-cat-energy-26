@@ -6,6 +6,13 @@
     padding-right: 36px;
     margin-bottom: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    width: 75%;
+    padding-top: 15px;
+    margin-bottom: 70px;
+  }
 }
 
 .additional__title {
@@ -24,6 +31,13 @@
     margin-bottom: 25px;
     border-bottom: 1px solid #cdcdcd;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+    margin-bottom: 75px;
+    padding: 0;
+    border: none;
+  }
 }
 
 .additional__title::after {
@@ -37,6 +51,17 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 72%;
+    height: 1px;
+    background-color: #cdcdcd;
+    left: 0;
+    bottom: -76px;
   }
 }
 
@@ -55,6 +80,11 @@
     flex-wrap: wrap;
     min-width: 630px;
     align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 72px;
+    padding-top: 0;
   }
 }
 
@@ -90,6 +120,10 @@
     font-size: 16px;
     margin-bottom: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 20px;
+  }
 }
 
 .additional__td-center {
@@ -100,6 +134,10 @@
 
 .additional__td-right {
   text-align: right;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 38px;
+  }
 }
 
 .additional__td-button {
@@ -108,6 +146,10 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
   }
 }
 
@@ -121,6 +163,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -138,6 +184,19 @@
     width: 112%;
     left: -37px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    width: 100%;
+    bottom: 15px;
+  }
+}
+
+.additional__desktop-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .additional__promo {
@@ -153,6 +212,15 @@
     background-image: url("../img/icon-gift.svg"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo-cat-tablet.png");
     background-position: top 55px left 79px, top center, top center;
     margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+    background-image: url("../img/icon-gift.svg"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo-cat-mob.jpg");
+    background-repeat: no-repeat;
+    background-position: top 65px center, top center, top center;
+    margin-bottom: 0;
   }
 }
 
@@ -174,5 +242,15 @@
     justify-content: right;
     align-items: center;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 20px;
+    height: 290px;
+    padding-right: 0;
+    text-align: center;
+    padding-top: 166px;
+    display: flex;
+    justify-content: center;
   }
 }

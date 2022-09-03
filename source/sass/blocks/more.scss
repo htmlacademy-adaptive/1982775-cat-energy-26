@@ -9,6 +9,11 @@
     padding-right: 35px;
     padding-left: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 320px;
+    margin-top: 71px;
+  }
 }
 
 .more__title::before,
@@ -65,6 +70,10 @@
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
   }
 }
 

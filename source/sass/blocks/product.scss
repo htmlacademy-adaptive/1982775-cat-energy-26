@@ -16,6 +16,11 @@
     padding-bottom: 32px;
     background-image: linear-gradient(360deg, #f2f2f2 82%, transparent 38%);
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    // height: 431px;
+  }
 }
 
 .product__link1 {
@@ -31,6 +36,11 @@
   @media (min-width: $tablet-width) {
     width: fit-content;
     height: 200px;
+
+    @media (min-width: $desktop-width) {
+      width: 172px;
+      height: auto;
+    }
   }
 }
 
@@ -58,6 +68,10 @@
     line-height: 24px;
     margin-bottom: 21px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
   }
 }
 
