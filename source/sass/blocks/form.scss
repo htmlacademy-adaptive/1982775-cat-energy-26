@@ -1,3 +1,9 @@
+.form {
+  @media (min-width: $tablet-width) {
+    padding: 0 37px;
+  }
+}
+
 .form__title {
   margin: 0;
   font-weight: 400;
@@ -5,6 +11,16 @@
   line-height: 36px;
   text-transform: uppercase;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .form__subtitle {
@@ -13,6 +29,18 @@
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 39px;
+  width: 15em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+}
+
+.form__personality {
+  display: flex;
+  justify-content: space-between;
 }
 
 .form__list-info {
@@ -20,26 +48,28 @@
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.form__list-info::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #d9d9d9;
-  left: 0;
-  bottom: -20px;
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+  }
 }
 
 .form__item {
   display: flex;
   margin-bottom: 14px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__item:last-child {
   margin-bottom: 52px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__list-label {
@@ -48,43 +78,69 @@
   color: #444444;
   margin-right: 13px;
   min-width: fit-content;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__list-input {
+  display: flex;
   width: 100%;
+  min-height: 45px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  padding: 11px 14px 11px 14px;
   border: 1px solid #e7e7e7e7;
   margin-left: auto;
+  padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 52px;
+    padding-left: 19px;
+  }
 }
 
 // радиокнопки
-
 .form__radio {
-  position: relative;
+  padding: 25px 0;
   margin: 0;
-  padding: 0;
+  margin-bottom: 26px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  position: relative;
   list-style: none;
-}
 
-.form__radio::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #d9d9d9;
-  left: 0;
-  bottom: -30px;
+  @media (min-width: $tablet-width) {
+    padding: 25px 28px;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    height: 196px;
+    margin-bottom: 69px;
+  }
 }
 
 .form__radio-item {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .form__radio-item:last-child {
-  margin-bottom: 51px;
+  margin-bottom: 0;
 }
 
 .form__radio-label::before {
@@ -102,10 +158,10 @@
   position: relative;
   text-transform: uppercase;
   color: #222222;
-  margin-left: 65px;
+  margin-left: 56px;
 }
 
-.control-mark {
+.form__control-mark {
   display: block;
   position: absolute;
   width: 30px;
@@ -123,12 +179,27 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .form__contacts-list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .form__contact-item {
@@ -136,46 +207,77 @@
   margin-bottom: 14px;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    min-width: 557px;
+  }
 }
 
 .form__contact-item:last-child {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__contact-label {
   text-transform: uppercase;
   margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__contact-input {
   flex-grow: 1;
+  min-height: 45px;
   font-family: $oswald;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  padding: 11px 14px 11px 14px;
+  padding-left: 14px;
   border: 1px solid #cdcdcd;
   font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 52px;
+    padding-left: 21px;
+  }
 }
 
-.mail {
+.form__contact-mail {
   position: absolute;
-  width: 18px;
-  height: 13px;
+  width: 19px;
+  height: 15px;
   background-image: url("../img/mail-icon.svg");
+  background-repeat: no-repeat;
   right: 15px;
+  top: 16px;
 }
 
-.tel {
+.form__contact-tel {
   position: absolute;
   width: 20px;
   height: 20px;
   background-image: url("../img/tel-icon.svg");
+  background-repeat: no-repeat;
   right: 13px;
+  top: 12px;
 }
-
-// Контактные данные
-
 
 .form__personality,
 .form__contacts,
@@ -191,6 +293,12 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 47px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .form__discription-text {
@@ -203,21 +311,45 @@
   text-transform: uppercase;
   color: #444444;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 19px;
+    font-size: 20px;
+    line-height: 30px;
+    height: 174px;
+    margin-bottom: 65px;
+  }
 }
 
 // Дополнительно
-
 .form__additional-head {
   padding: 0;
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 62px;
+  }
 }
 
 .form__additional-list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__additional-input {
@@ -227,10 +359,20 @@
 .form__additional-label {
   text-transform: uppercase;
   margin-left: 66px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
 }
 
 .form__additional-item {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__additional-item:last-child {
@@ -238,10 +380,24 @@
 }
 
 .form__button {
-  display: block;
+  padding: 0;
   width: 100%;
-  height: 40px;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+    margin-right: 61px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 55%;
+    margin-right: 81px;
+    margin-bottom: 82px;
+  }
 }
 
 .form__button-mark {
@@ -250,4 +406,9 @@
   font-size: 14px;
   text-align: center;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    font-size: 16px;
+  }
 }

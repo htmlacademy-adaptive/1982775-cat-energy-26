@@ -1,6 +1,51 @@
 .main-header {
-  text-align: center;
-  min-height: 65px;
-  padding: 10px 20px 24px 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 62px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
+  }
 }
 
+.main-header__logo {
+  display: block;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.main-header__text-logo {
+  position: absolute;
+  right: 76px;
+  top: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle {
+  position: absolute;
+  right: 0;
+  top: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
