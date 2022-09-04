@@ -8,20 +8,24 @@
   @media (min-width: $tablet-width) {
     background-image: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .cover::before {
   @media (min-width: $desktop-width) {
     position: absolute;
     content: "";
-    width: 729px;
     height: 694px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-size: 729px 694px;
-    background-position: top right;
+    background-size: auto 694px;
+    background-position: top left;
     right: 0;
-    top: -108px;
+    left: calc((100% - 1220px) / 2 + 598px);
+    top: -143px;
   }
 }
 
@@ -36,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 680px;
+    min-height: 552px;
   }
 }
 
@@ -80,6 +84,7 @@
     padding-bottom: 0;
     text-align-last: left;
     padding-left: 80px;
+    width: 500px;
   }
 
   @media (min-width: $desktop-width) {

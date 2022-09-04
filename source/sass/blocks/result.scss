@@ -7,6 +7,12 @@
   }
 }
 
+.result__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .result__title {
   margin: 0;
   font-weight: 400;
