@@ -22,6 +22,12 @@
   }
 }
 
+.logo {
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+  }
+}
+
 .main-header__text-logo {
   position: absolute;
   right: 76px;
