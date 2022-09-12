@@ -6,12 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page">
   <header class="main-header container">
     <a class="main-header__logo">
-      <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy" />
+      <picture>
+        <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+        <img class="logo" src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
+      </picture>
       <img class="main-header__text-logo" src="img/logo/logo-text.svg" width="128" height="24" alt=""
         aria-hidden="true" />
     </a>
@@ -42,8 +50,15 @@
           питание для котов
         </h1>
         <p class="cover__slogan">Занялся собой? Займись котом!</p>
-        <img class="cover__img" src="img/cover-product.png" width="280" height="270"
-          alt="Натуральный продукт Cat Energy" />
+        <picture>
+          <source media="(min-width: 1280px)"
+            srcset="img/main-can/index-can-desktop.png, img/main-can/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/main-can/index-can-tablet.png, img/main-can/index-can-tablet@2x.png 2x">
+          <img class="cover__img" src="img/main-can/index-can-mobile.png"
+            srcset="img/main-can/index-can-mobile@2x.png 2x" width="280" height="270"
+            alt="Натуральный продукт Cat Energy" />
+        </picture>
         <a class="cover__button button" href="#">подобрать программу</a>
       </div>
     </section>
@@ -100,29 +115,47 @@
     </section>
     <section class="result">
       <div class="result__wrapper container">
-        <!-- классы для фоток и ползунка как воткнуть пока не знаю. -->
-        <h2 class="result__title">Живой пример</h2>
-        <p class="result__discription">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в
-          день.
-        </p>
-        <div class="result__block-wrapper">
-          <div class="result__block">
-            <p class="result__data">5 КГ</p>
-            <p class="result__indicators">снижение <br> веса</p>
-          </div>
-          <div class="result__block">
-            <p class="result__data result__data--days">60 ДНЕЙ</p>
-            <p class="result__indicators">затрачено <br> времени</p>
-          </div>
-          <p class="result__total">
-            Затраты на питание:<span class="result__total-money">15 000 РУБ.</span>
+        <div>
+          <h2 class="result__title">Живой пример</h2>
+          <p class="result__discription">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            день.
           </p>
+          <div class="result__block-wrapper">
+            <div class="result__block">
+              <p class="result__data">5 КГ</p>
+              <p class="result__indicators">снижение <br> веса</p>
+            </div>
+            <div class="result__block">
+              <p class="result__data result__data--days">60 ДНЕЙ</p>
+              <p class="result__indicators">затрачено <br> времени</p>
+            </div>
+            <p class="result__total">
+              Затраты на питание:<span class="result__total-money">15 000 РУБ.</span>
+            </p>
+          </div>
         </div>
-        <div class="result__slider">
-          <div class="result__slider-line">
+        <!-- Слайдер коты -->
+        <div class="comparison">
+          <div class="comparison__wrapper">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/skinny-fat/cat-skinny-tablet.png, img/comparison/cat-skinny-tablet@2x 2x">
+              <img class="comparison__skinny" src="img/skinny-fat/cat-skinny-mob.png"
+                srcset="img/skinny-fat/cat-skinny-mob@2x.png 2x" width="280" height="256" alt="Худой кот">
+            </picture>
+            <div class="comparison__top">
+              <picture>
+                <source media="(min-width: 768px)"
+                  srcset="img/skinny-fat/cat-fat-tablet.png, img/comparison/cat-fat-tablet@2x 2x">
+                <img class="comparison__top-img comparison__fat" src="img/skinny-fat/cat-fat-mob.png"
+                  srcset="img/skinny-fat/cat-fat-mob@2x.png 2x" width="280" height="256" alt="Толстый кот">
+              </picture>
+            </div>
+          </div>
+          <div class="comparison__slider">
           </div>
         </div>
       </div>

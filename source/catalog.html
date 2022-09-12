@@ -6,12 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page">
   <header class="main-header container main-header--deco-line">
     <a class="main-header__logo" href="index.html">
-      <img src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+        <img class="logo" src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
+      </picture>
       <img class="main-header__text-logo" src="img/logo/logo-text.svg" width="128" height="24" alt=""
         aria-hidden="true" />
     </a>
@@ -41,10 +49,17 @@
         <h2 class="visually-hidden">Наши товары.</h2>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy PRO 500 г</h3>
-          <a class="product__link1" href="#"><img class="product__img" src="./img/products/eat-1.png" width="140"
-              height="112" alt="Изображение упаковки товара">
+          <a class="product__link1" href="#">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/products/eat-1-desktop.png, img/products/eat-1-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/products/eat-1-tablet.png, img/products/eat-1-tablet@2x.png 2x">
+              <img class="product__img" src="img/products/eat-1-mob.png" srcset="img/products/eat-1-mob@2x.png 2x"
+                width="140" height="112" alt="Изображение упаковки товара">
+            </picture>
           </a>
-          <a href="#" class="product__name">Cat Energy <br class="product__mob"> PRO <br class="product__tablet"> 500
+          <a href="#" class="product__name">Cat Energy <br class="product__mob"> PRO <br class="product__tablet">500
             г</a>
           <div class="product__discription">
             <p class="product__discription-name">Масса<span class="product__discription-value">500 г</span></p>
@@ -55,8 +70,15 @@
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy PRO 1000 г</h3>
-          <a class="product__link1" href="#"><img class="product__img" src="./img/products/eat-2.png" width="140"
-              height="112" alt="Изображение упаковки товара">
+          <a class="product__link1" href="#">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/products/eat-2-desktop.png, img/products/eat-2-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/products/eat-2-tablet.png, img/products/eat-2-tablet@2x.png 2x">
+              <img class="product__img" src="img/products/eat-2-mob.png" srcset="img/products/eat-2-mob@2x.png 2x"
+                width="140" height="112" alt="Изображение упаковки товара">
+            </picture>
           </a>
           <a href="#" class="product__name">Cat Energy <br class="product__mob"> PRO <br class="product__tablet">1000
             г</a>
@@ -69,8 +91,15 @@
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy PRO 500 г</h3>
-          <a class="product__link1" href="#"><img class="product__img" src="./img/products/eat-3.png" width="140"
-              height="112" alt="Изображение упаковки товара">
+          <a class="product__link1" href="#">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/products/eat-3-desktop.png, img/products/eat-3-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/products/eat-3-tablet.png, img/products/eat-3-tablet@2x.png 2x">
+              <img class="product__img" src="img/products/eat-3-mob.png" srcset="img/products/eat-3-mob@2x.png 2x"
+                width="140" height="112" alt="Изображение упаковки товара">
+            </picture>
           </a>
           <a href="#" class="product__name">Cat Energy <br class="product__mob"> PRO<br class="product__tablet"> 500
             г</a>
@@ -83,8 +112,15 @@
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy PRO 1000 г</h3>
-          <a class="product__link1" href="#"><img class="product__img" src="./img/products/eat-4.png" width="140"
-              height="112" alt="Изображение упаковки товара">
+          <a class="product__link1" href="#">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/products/eat-4-desktop.png, img/products/eat-4-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/products/eat-4-tablet.png, img/products/eat-4-tablet@2x.png 2x">
+              <img class="product__img" src="img/products/eat-4-mob.png" srcset="img/products/eat-4-mob@2x.png 2x"
+                width="140" height="112" alt="Изображение упаковки товара">
+            </picture>
           </a>
           <a href="#" class="product__name">Cat Energy <br class="product__mob"> PRO <br class="product__tablet">1000
             г</a>
@@ -97,8 +133,15 @@
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy SLIM 500 г</h3>
-          <a class="product__link1" href="#"><img class="product__img" src="./img/products/eat-5.png" width="140"
-              height="112" alt="Изображение упаковки товара">
+          <a class="product__link1" href="#">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/products/eat-5-desktop.png, img/products/eat-5-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/products/eat-5-tablet.png, img/products/eat-5-tablet@2x.png 2x">
+              <img class="product__img" src="img/products/eat-5-mob.png" srcset="img/products/eat-5-mob@2x.png 2x"
+                width="140" height="112" alt="Изображение упаковки товара">
+            </picture>
           </a>
           <a href="#" class="product__name">Cat Energy <br class="product__mob"> PRO<br class="product__tablet"> 1000
             г</a>
@@ -111,8 +154,15 @@
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy SLIM 1000 г</h3>
-          <a class="product__link1" href="#"><img class="product__img" src="./img/products/eat-6.png" width="140"
-              height="112" alt="Изображение упаковки товара">
+          <a class="product__link1" href="#">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/products/eat-6-desktop.png, img/products/eat-6-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/products/eat-6-tablet.png, img/products/eat-6-tablet@2x.png 2x">
+              <img class="product__img" src="img/products/eat-6-mob.png" srcset="img/products/eat-6-mob@2x.png 2x"
+                width="140" height="112" alt="Изображение упаковки товара">
+            </picture>
           </a>
           <a href="#" class="product__name">Cat Energy <br class="product__mob"> SLIM <br class="product__tablet">1000
             г</a>
@@ -125,8 +175,15 @@
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy SLIM 500 г</h3>
-          <a class="product__link1" href="#"><img class="product__img" src="./img/products/eat-7.png" width="140"
-              height="112" alt="Изображение упаковки товара">
+          <a class="product__link1" href="#">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/products/eat-7-desktop.png, img/products/eat-7-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/products/eat-7-tablet.png, img/products/eat-7-tablet@2x.png 2x">
+              <img class="product__img" src="img/products/eat-7-mob.png" srcset="img/products/eat-7-mob@2x.png 2x"
+                width="140" height="112" alt="Изображение упаковки товара">
+            </picture>
           </a>
           <a href="#" class="product__name">Cat Energy <br class="product__mob"> SLIM <br class="product__tablet">500
             г</a>
@@ -145,10 +202,12 @@
       </div>
     </section>
     <!-- Дополнительные товары -->
-    <section class="additional container">
+    <section class="additional">
       <div class="additional__wrapper">
-        <h2 class="additional__title">Дополнительные товары</h2>
-        <div class="additional__desktop-wrapper">
+        <div class="container">
+          <h2 class="additional__title">Дополнительные товары</h2>
+        </div>
+        <div class="additional__desktop-wrapper container">
           <table class="additional__list">
             <tr class="additional__item">
               <th class="additional__th">Сахарозаменитель</th>
