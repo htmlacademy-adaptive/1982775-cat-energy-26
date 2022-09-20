@@ -4,7 +4,7 @@
 
 .main-footer__wrapper {
   padding-top: 39px;
-  padding-bottom: 32px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -18,11 +18,19 @@
 .main-footer__logo {
   display: block;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 163px;
     text-align: left;
   }
+}
+
+.main-footer__svg:hover {
+  fill: rgba(17, 17, 17, 0.7);
+}
+
+.main-footer__svg:active {
+  fill: rgba(17, 17, 17, 0.3);
 }

@@ -20,7 +20,7 @@
         <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
         <img class="logo" src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
       </picture>
-      <img class="main-header__text-logo" src="img/logo/logo-text.svg" width="128" height="24" alt=""
+      <img class="main-header__text-logo" src="img/logo/logo-text.svg" width="102" height="19" alt=""
         aria-hidden="true" />
     </a>
     <button class="main-header__toggle" type="button">
@@ -56,15 +56,15 @@
               <ul class="form__list-info">
                 <li class="form__item">
                   <label class="form__list-label" for="name">ИМЯ:*</label>
-                  <input class="form__list-input" id="name" type="text" placeholder="барсик" required>
+                  <input class="form__list-input form__list-input--error" id="name" type="text" placeholder="барсик" required>
                 </li>
                 <li class="form__item">
                   <label class="form__list-label" for="weight">Вес (кг):*</label>
-                  <input class="form__list-input" id="weight" type="number" min="1" max="15" placeholder="7" required>
+                  <input class="form__list-input form__list-input--error" id="weight" type="number" min="1" max="15" placeholder="7" required>
                 </li>
                 <li class="form__item">
                   <label class="form__list-label" for="age">Возраст (лет):</label>
-                  <input class="form__list-input" id="age" type="number" min="1" max="25" placeholder="7">
+                  <input class="form__list-input form__list-input--error" id="age" type="number" min="1" max="25" placeholder="7">
                 </li>
               </ul>
               <!-- радиокнопки -->
@@ -95,13 +95,17 @@
               <ul class="form__contacts-list">
                 <li class="form__contact-item">
                   <label class="form__contact-label" for="email">E-mail:*</label>
-                  <input class="form__contact-input" type="email" id="email" placeholder="кuklachev@gmail.com"
-                    required><span class="form__contact-mail"></span>
+                  <input class="form__contact-input form__contact-input--error" type="email" id="email" placeholder="кuklachev@gmail.com" required>
+                  <svg class="form__mail-svg" width="18" height="13">
+                    <use xlink:href="img/sprite.svg#mail"></use>
+                  </svg>
                 </li>
                 <li class="form__contact-item">
                   <label class="form__contact-label" for="tel">Телефон:*</label>
-                  <input class="form__contact-input" type="tel" id="tel" placeholder="8 (960) 900-60-90" required><span
-                    class="form__contact-tel"></span>
+                  <input class="form__contact-input form__contact-input--error" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+                  <svg class="form__phone-svg" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg>
                 </li>
               </ul>
             </fieldset>
@@ -121,20 +125,25 @@
               <legend class="form__additional-head">Дополнительно</legend>
               <ul class="form__additional-list">
                 <li class="form__additional-item">
-                  <input class="form__additional-input" type="checkbox" name="sweetener" id="sweetener" checked>
-                  <label class="form__additional-label" for="sweetener">сахарозаменитель</label>
+                  <input class=" visually-hidden form__additional-input" type="checkbox" name="sweetener" id="sweetener"
+                    checked>
+                  <label class="form__additional-label" for="sweetener"><span
+                      class="form__additional-mark additional-form"></span>сахарозаменитель</label>
                 </li>
                 <li class="form__additional-item">
-                  <input class="form__additional-input" type="checkbox" name="water" id="water">
-                  <label class="form__additional-label" for="water">питьевая вода</label>
+                  <input class="visually-hidden form__additional-input" type="checkbox" name="water" id="water">
+                  <label class="form__additional-label" for="water"><span
+                      class="form__additional-mark additional-form"></span>питьевая вода</label>
                 </li>
                 <li class="form__additional-item">
-                  <input class="form__additional-input" type="checkbox" name="milk" id="milk">
-                  <label class="form__additional-label" for="milk">молоко</label>
+                  <input class="visually-hidden form__additional-input" type="checkbox" name="milk" id="milk">
+                  <label class="form__additional-label" for="milk"><span
+                      class="form__additional-mark additional-form"></span>молоко</label>
                 </li>
                 <li class="form__additional-item">
-                  <input class="form__additional-input" type="checkbox" name="vitamins" id="vitamins">
-                  <label class="form__additional-label" for="vitamins">витамины</label>
+                  <input class="visually-hidden form__additional-input" type="checkbox" name="vitamins" id="vitamins">
+                  <label class="form__additional-label" for="vitamins"><span
+                      class="form__additional-mark additional-form"></span>витамины</label>
                 </li>
               </ul>
             </fieldset>
@@ -167,20 +176,42 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper container">
       <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-      <a class="main-footer__logo" href="#"><img class="main-footer__logo-img" src="img/logo/logo-text.svg"
-          alt="Логотип Cat Energy" /></a>
+      <a class="main-footer__logo" href="index.html">
+        <svg class="main-footer__svg" width="128" height="24">
+          <use xlink:href="img/sprite.svg#logo-text"></use>
+        </svg>
+      </a>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social-list__icon social-list__icon--vk" href="https://vk.com/htmlacademy"></a>
+          <a class="social-list__icon" href="https://vk.com/htmlacademy">
+            <svg class="social-list__svg" width="28" height="22">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__icon social-list__icon--youtube" href="https://www.youtube.com/user/htmlacademy"></a>
+          <a class="social-list__icon" href="https://www.youtube.com/user/htmlacademy">
+            <svg class="social-list__svg" width="28" height="22">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__icon social-list__icon--telegram" href="https://t.me/htmlacademy"></a>
+          <a class="social-list__icon" href="https://t.me/htmlacademy">
+            <svg class="social-list__svg" width="28" height="22">
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-      <a class="sponsor" href="#">HTML Academy</a>
+      <div class="sponsor">
+        <a class="sponsor__text" href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">HTML Academy</a>
+        <a class="sponsor__logo" href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">
+          <svg class="sponsor__svg" width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-sponsor"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

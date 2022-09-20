@@ -23,7 +23,7 @@
   width: 30px;
   height: 2px;
   left: 50%;
-  top: -43px;
+  top: -39px;
   background-color: #d3d3d3;
   transform: translateX(-50%);
 
@@ -82,14 +82,22 @@
   color: #444444;
 }
 
+.more__button:hover {
+  background-color: #ebebeb;
+}
+
+.more__button:active {
+  color: rgba(69, 69, 69, 0.3);
+}
+
 .more::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 458px;
   height: 1px;
   background-color: #ebebeb;
-  left: 0;
-  bottom: 24px;
+  left: -129px;
+  bottom: 26px;
 
   @media (min-width: $tablet-width) {
     display: none;

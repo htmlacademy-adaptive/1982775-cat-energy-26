@@ -5,7 +5,7 @@
   justify-content: center;
   position: relative;
   list-style: none;
-  padding-bottom: 49px;
+  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -13,7 +13,7 @@
 }
 
 .social-list__item + .social-list__item {
-  margin-left: 26px;
+  margin-left: 23px;
 }
 
 .social-list__icon {
@@ -24,16 +24,16 @@
   height: 22px;
 }
 
-.social-list__icon--vk {
-  background-image: url("../img/social/vk.svg");
+.social-list__svg {
+  fill: #666666;
 }
 
-.social-list__icon--youtube {
-  background-image: url("../img/social/youtube.svg");
+.social-list__svg:hover {
+  fill: #68b738;
 }
 
-.social-list__icon--telegram {
-  background-image: url("../img/social/telegram.svg");
+.social-list__svg:active {
+  fill: rgba(104, 183, 56, 0.3);
 }
 
 .social-list::before {
@@ -43,7 +43,7 @@
   width: 280px;
   height: 1px;
   left: 0;
-  top: -20px;
+  top: -21px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -57,7 +57,7 @@
   width: 280px;
   height: 1px;
   left: 0;
-  top: 45px;
+  top: 42px;
 
   @media (min-width: $tablet-width) {
     display: none;

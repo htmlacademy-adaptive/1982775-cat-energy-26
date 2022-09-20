@@ -3,7 +3,7 @@
 }
 
 .additional__list {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     padding-left: 36px;
@@ -28,7 +28,7 @@
   background-color: #ffffff;
   width: fit-content;
   padding: 0 22px;
-  margin-left: -22px;
+  margin-left: -23px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -68,7 +68,7 @@
   height: 1px;
   background-color: #d9d9d9;
   left: 23px;
-  bottom: -38px;
+  bottom: -36px;
 
   @media (min-width: $tablet-width) {
     width: 627px;
@@ -116,7 +116,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -196,7 +196,7 @@
   height: 1px;
   background-color: #cdcdcd;
   left: 0;
-  bottom: 15px;
+  bottom: 14px;
 
   @media (min-width: $tablet-width) {
     bottom: 25px;
@@ -224,7 +224,7 @@
   background-image: url("../img/icon-gift.svg"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo-cat-catalog/promo-cat-mob.jpg");
   background-repeat: no-repeat;
   background-size: auto, auto, 100% auto;
-  background-position: top 65px center, top center, top center;
+  background-position: top 57px center, top center, top center;
   margin-bottom: 35px;
 
   @media (min-resolution: 2dppx) {
@@ -264,7 +264,7 @@
   display: block;
   text-decoration: none;
   color: #ffffff;
-  padding-top: 166px;
+  padding-top: 188px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;

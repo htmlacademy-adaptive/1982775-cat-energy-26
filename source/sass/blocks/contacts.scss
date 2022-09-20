@@ -59,7 +59,7 @@
 
 .contacts__adress-indent {
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    display: map-wrapperinline-block;
     margin-top: 16px;
   }
 }
@@ -73,4 +73,8 @@
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+}
+
+.contacts__map-wrapper {
+  background-image: url("../img/maps/location.png");
 }
