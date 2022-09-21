@@ -4,6 +4,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     column-gap: 60px;
+    row-gap: 28px;
   }
 
   @media (min-width: $desktop-width) {

@@ -4,15 +4,15 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid #f2f2f2;
-    height: 376px;
+    height: 429px;
     margin-top: 84px;
     padding-right: 35px;
     padding-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 320px;
-    margin-top: 71px;
+    height: 430px;
+    margin-top: 84px;
   }
 }
 
@@ -23,13 +23,13 @@
   width: 30px;
   height: 2px;
   left: 50%;
-  top: -43px;
+  top: -39px;
   background-color: #d3d3d3;
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
     width: 60px;
-    top: -56px;
+    top: -79px;
   }
 }
 
@@ -50,7 +50,7 @@
   margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 115px;
+    margin-top: 159px;
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 23px;
@@ -69,11 +69,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 78px;
+    margin-bottom: 88px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 28px;
+    margin-bottom: 86px;
   }
 }
 
@@ -82,14 +82,22 @@
   color: #444444;
 }
 
+.more__button:hover {
+  background-color: #ebebeb;
+}
+
+.more__button:active {
+  color: rgba(69, 69, 69, 0.3);
+}
+
 .more::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 458px;
   height: 1px;
   background-color: #ebebeb;
-  left: 0;
-  bottom: 24px;
+  left: -129px;
+  bottom: 26px;
 
   @media (min-width: $tablet-width) {
     display: none;

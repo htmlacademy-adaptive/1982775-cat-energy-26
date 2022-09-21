@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -20,7 +20,7 @@
         <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
         <img class="logo" src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип Cat Energy">
       </picture>
-      <img class="main-header__text-logo" src="img/logo/logo-text.svg" width="128" height="24" alt=""
+      <img class="main-header__text-logo" src="img/logo/logo-text.svg" width="101" height="19" alt=""
         aria-hidden="true" />
     </a>
     <button class="main-header__toggle" type="button">
@@ -51,6 +51,11 @@
           <h3 class="visually-hidden">Cat Energy PRO 500 г</h3>
           <a class="product__link1" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1280px)"
+                srcset="img/products/eat-1-desktop.webp, img/products/eat-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/products/eat-1-tablet.webp, img/products/eat-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/products/eat-1-mob.webp, img/products/eat-1-mob@2x.webp 2x">
               <source media="(min-width: 1280px)"
                 srcset="img/products/eat-1-desktop.png, img/products/eat-1-desktop@2x.png 2x">
               <source media="(min-width: 768px)"
@@ -143,7 +148,7 @@
                 width="140" height="112" alt="Изображение упаковки товара">
             </picture>
           </a>
-          <a href="#" class="product__name">Cat Energy <br class="product__mob"> PRO<br class="product__tablet"> 1000
+          <a href="#" class="product__name">Cat Energy <br class="product__mob"> SLIM<br class="product__tablet"> 500
             г</a>
           <div class="product__discription">
             <p class="product__discription-name">Масса<span class="product__discription-value">500 г</span></p>
@@ -260,20 +265,42 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper container">
       <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-      <a class="main-footer__logo" href="#"><img class="main-footer__logo-img" src="img/logo/logo-text.svg"
-          alt="Логотип Cat Energy" /></a>
+      <a class="main-footer__logo" href="index.html">
+        <svg class="main-footer__svg" width="128" height="24">
+          <use xlink:href="img/sprite.svg#logo-text"></use>
+        </svg>
+      </a>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social-list__icon social-list__icon--vk" href="https://vk.com/htmlacademy"></a>
+          <a class="social-list__icon" href="https://vk.com/htmlacademy">
+            <svg class="social-list__svg" width="28" height="22">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__icon social-list__icon--youtube" href="https://www.youtube.com/user/htmlacademy"></a>
+          <a class="social-list__icon" href="https://www.youtube.com/user/htmlacademy">
+            <svg class="social-list__svg" width="28" height="22">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__icon social-list__icon--telegram" href="https://t.me/htmlacademy"></a>
+          <a class="social-list__icon" href="https://t.me/htmlacademy">
+            <svg class="social-list__svg" width="28" height="22">
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-      <a class="sponsor" href="#">HTML Academy</a>
+      <div class="sponsor">
+        <a class="sponsor__text" href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">HTML Academy</a>
+        <a class="sponsor__logo" href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">
+          <svg class="sponsor__svg" width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-sponsor"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 </body>
