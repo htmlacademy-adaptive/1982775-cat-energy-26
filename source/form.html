@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -45,14 +45,14 @@
   <main class="main-form">
     <h1 class="visually-hidden">Страница подбора программы питания.</h1>
     <section class="form">
-      <div class="container">
+      <div class="container container--form">
         <h2 class="form__title">Подбор программы</h2>
         <h3 class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h3>
       </div>
       <div class="form__wrapper">
         <form class="form__header" action="https://echo.htmlacademy.ru/" method="post">
           <div>
-            <fieldset class="form__personality container">
+            <fieldset class="form__personality container container--form">
               <ul class="form__list-info">
                 <li class="form__item">
                   <label class="form__list-label" for="name">ИМЯ:*</label>
@@ -60,11 +60,11 @@
                 </li>
                 <li class="form__item">
                   <label class="form__list-label" for="weight">Вес (кг):*</label>
-                  <input class="form__list-input form__list-input--error" id="weight" type="number" min="1" max="15" placeholder="7" required>
+                  <input class="form__list-input" id="weight" type="number" min="1" max="15" placeholder="7" required>
                 </li>
                 <li class="form__item">
                   <label class="form__list-label" for="age">Возраст (лет):</label>
-                  <input class="form__list-input form__list-input--error" id="age" type="number" min="1" max="25" placeholder="7">
+                  <input class="form__list-input" id="age" type="number" min="1" max="25" placeholder="7">
                 </li>
               </ul>
               <!-- радиокнопки -->
@@ -90,19 +90,19 @@
           </div>
           <!-- Контактные данные -->
           <div class="form__contact-decor">
-            <fieldset class="form__contacts container">
+            <fieldset class="form__contacts container container--form">
               <legend class="form__contacts-head">Контактные данные <br class="product__mob">(владельца кота)</legend>
               <ul class="form__contacts-list">
                 <li class="form__contact-item">
                   <label class="form__contact-label" for="email">E-mail:*</label>
                   <input class="form__contact-input form__contact-input--error" type="email" id="email" placeholder="кuklachev@gmail.com" required>
-                  <svg class="form__mail-svg" width="18" height="13">
+                  <svg class="form__mail-svg form__mail-svg--invalid" fill="none" width="18" height="13">
                     <use xlink:href="img/sprite.svg#mail"></use>
                   </svg>
                 </li>
                 <li class="form__contact-item">
                   <label class="form__contact-label" for="tel">Телефон:*</label>
-                  <input class="form__contact-input form__contact-input--error" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+                  <input class="form__contact-input" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
                   <svg class="form__phone-svg" width="20" height="20">
                     <use xlink:href="img/sprite.svg#phone"></use>
                   </svg>
@@ -112,7 +112,7 @@
           </div>
           <!-- Комментарий -->
           <div class="form__discription-decor">
-            <fieldset class="form__discription container">
+            <fieldset class="form__discription container container--form">
               <legend class="form__discription-head">Комментарий</legend>
               <label class="visually-hidden" for="comment">Поле для описания вашего питомца.</label>
               <textarea class="form__discription-text" name="text" id="comment" cols="30" rows="10"
@@ -121,7 +121,7 @@
           </div>
           <!-- Дополнительно -->
           <div class="form__additional-decor">
-            <fieldset class="form__additional container">
+            <fieldset class="form__additional container container--form">
               <legend class="form__additional-head">Дополнительно</legend>
               <ul class="form__additional-list">
                 <li class="form__additional-item">
@@ -149,7 +149,7 @@
             </fieldset>
           </div>
           <!-- Кнопка -->
-          <div class="container">
+          <div class="container container--form">
             <button class="form__button container button" type="submit">отправить заявку</button>
             <span class="form__button-mark">* — Обязательные поля</span>
           </div>

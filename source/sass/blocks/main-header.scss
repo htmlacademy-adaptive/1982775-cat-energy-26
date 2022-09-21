@@ -4,12 +4,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 62px;
+    margin-bottom: 60px;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 74px;
+    margin-top: 32px;
   }
 }
 
@@ -29,9 +30,11 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     height: auto;
+    margin-bottom: 0;
+    margin-top: 5px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 202px;
     height: auto;
   }
@@ -86,6 +89,6 @@
 }
 
 .main-header__toggle--close {
-  display: none;
+  // display: none;
   background-image: url("../img/menu-close.svg");
 }

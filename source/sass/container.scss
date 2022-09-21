@@ -6,6 +6,13 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 30px;
+
+    @media (max-width: $desktop-width-max) {
+      &--form {
+        padding-left: 70px;
+        padding-right: 70px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
