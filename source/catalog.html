@@ -10,6 +10,8 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page">
@@ -23,10 +25,10 @@
       <img class="main-header__text-logo" src="img/logo/logo-text.svg" width="101" height="19" alt=""
         aria-hidden="true" />
     </a>
-    <button class="main-header__toggle" type="button">
+    <button class="main-header__toggle main-header__toggle--close" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--open">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
@@ -71,7 +73,7 @@
             <p class="product__discription-name">Вкус<span class="product__discription-value">Курица</span></p>
             <p class="product__discription-name">Цена<span class="product__discription-value">700 P</span></p>
           </div>
-          <a href="" class="product__button button">ЗАКАЗАТЬ</a>
+          <a href="form.html" class="product__button button">ЗАКАЗАТЬ</a>
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy PRO 1000 г</h3>
@@ -92,7 +94,7 @@
             <p class="product__discription-name">Вкус<span class="product__discription-value">Курица</span></p>
             <p class="product__discription-name">Цена<span class="product__discription-value">1000 P</span></p>
           </div>
-          <a href="" class="product__button button">ЗАКАЗАТЬ</a>
+          <a href="form.html" class="product__button button">ЗАКАЗАТЬ</a>
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy PRO 500 г</h3>
@@ -113,7 +115,7 @@
             <p class="product__discription-name">Вкус<span class="product__discription-value">Рыба</span></p>
             <p class="product__discription-name">Цена<span class="product__discription-value">700 P</span></p>
           </div>
-          <a href="" class="product__button button">ЗАКАЗАТЬ</a>
+          <a href="form.html" class="product__button button">ЗАКАЗАТЬ</a>
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy PRO 1000 г</h3>
@@ -134,7 +136,7 @@
             <p class="product__discription-name">Вкус<span class="product__discription-value">Рыба</span></p>
             <p class="product__discription-name">Цена<span class="product__discription-value">1000 P</span></p>
           </div>
-          <a href="" class="product__button button">ЗАКАЗАТЬ</a>
+          <a href="form.html" class="product__button button">ЗАКАЗАТЬ</a>
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy SLIM 500 г</h3>
@@ -155,7 +157,7 @@
             <p class="product__discription-name">Вкус<span class="product__discription-value">Гречка</span></p>
             <p class="product__discription-name">Цена<span class="product__discription-value">400 P</span></p>
           </div>
-          <a href="" class="product__button button">ЗАКАЗАТЬ</a>
+          <a href="form.html" class="product__button button">ЗАКАЗАТЬ</a>
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy SLIM 1000 г</h3>
@@ -176,7 +178,7 @@
             <p class="product__discription-name">Вкус<span class="product__discription-value">Гречка</span></p>
             <p class="product__discription-name">Цена<span class="product__discription-value">700 P</span></p>
           </div>
-          <a href="" class="product__button button">ЗАКАЗАТЬ</a>
+          <a href="form.html" class="product__button button">ЗАКАЗАТЬ</a>
         </article>
         <article class="product">
           <h3 class="visually-hidden">Cat Energy SLIM 500 г</h3>
@@ -197,7 +199,7 @@
             <p class="product__discription-name">Вкус<span class="product__discription-value">Рис</span></p>
             <p class="product__discription-name">Цена<span class="product__discription-value">500 P</span></p>
           </div>
-          <a href="" class="product__button button">ЗАКАЗАТЬ</a>
+          <a href="form.html" class="product__button button">ЗАКАЗАТЬ</a>
         </article>
         <article class="more">
           <h3 class="more__title">Показать еще <br class="product__tablet">100500 товаров</h3>
@@ -294,8 +296,8 @@
         </li>
       </ul>
       <div class="sponsor">
-        <a class="sponsor__text" href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">HTML Academy</a>
-        <a class="sponsor__logo" href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">
+        <a class="sponsor__text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">HTML Academy</a>
+        <a class="sponsor__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
           <svg class="sponsor__svg" width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-sponsor"></use>
           </svg>

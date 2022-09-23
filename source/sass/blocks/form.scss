@@ -37,23 +37,6 @@
   }
 }
 
-.main-form::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #d9d9d9;
-  top: 584px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
 .form__title {
   font-weight: 400;
   font-size: 36px;
@@ -170,21 +153,20 @@
 
 .form__contact-input:focus,
 .form__list-input:focus {
-  border: 1px solid #444444;
+  border: 2px solid #444444;
 }
 
-.form__contact-input--error,
-.form__list-input--error {
-  border: 2px solid #ff8282;
-}
+// стили для состояния input-error
+// .form__contact-input--error,
+// .form__list-input--error {
+//   border: 2px solid #ff8282;
+// }
 
 // радиокнопки
 .form__radio {
   padding: 25px 0 22px 0;
   margin: 0;
   margin-bottom: 25px;
-  // border-top: 1px solid #e7e7e7;
-  // border-bottom: 1px solid #e7e7e7;
   position: relative;
   list-style: none;
 
@@ -234,11 +216,11 @@
   }
 }
 
-.control-input:checked+label::before {
+.control-input:checked + label::before {
   background-color: #68b738;
 }
 
-.control-input:checked+label:disabled::before {
+.control-input:checked + label:disabled::before {
   opacity: 0.3;
 }
 
@@ -272,6 +254,10 @@
   }
 }
 
+.control-input:focus + label .form__control-mark {
+  border: 2px solid #444444;
+}
+
 .form__control-mark:hover {
   border: 1px solid #bababa;
 }
@@ -301,6 +287,23 @@
 
   @media (min-width: $tablet-width) {
     top: 21px;
+  }
+}
+
+.form__contact-decor::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  top: -21px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -416,10 +419,11 @@
   stroke: #68b738;
 }
 
-.form__phone-svg--invalid,
-.form__mail-svg--invalid {
-  stroke: #ff8282;
-}
+// стили для состояния svg:invalid
+// .form__phone-svg--invalid,
+// .form__mail-svg--invalid {
+//   stroke: #ff8282;
+// }
 
 .form__phone-svg {
   position: absolute;
@@ -527,7 +531,7 @@
   }
 }
 
-.form__additional-input:checked+label .form__additional-mark::before {
+.form__additional-input:checked + label .form__additional-mark::before {
   position: absolute;
   left: 1px;
   width: 30px;
@@ -536,14 +540,15 @@
   background-image: url("../img/tick.svg");
 
   @media (min-width: $tablet-width) {
-    left: 4px;
-    top: 6px;
+    left: 2px;
+    top: 4px;
+    background-size: 100%;
   }
 }
 
-// .form__additional-input:focus + label .form__additional-mark {
-//   background-color: #ff8282;
-// }
+.form__additional-input:focus + label .form__additional-mark {
+  border: 2px solid #444444;
+}
 
 .form__additional-mark {
   display: block;
@@ -569,6 +574,7 @@
     margin-bottom: 42px;
     font-size: 20px;
     line-height: 30px;
+    width: 248px;
   }
 }
 

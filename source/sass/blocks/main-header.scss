@@ -1,5 +1,6 @@
 .main-header {
   position: relative;
+  padding-bottom: 0.5px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -89,6 +90,6 @@
 }
 
 .main-header__toggle--close {
-  // display: none;
+  display: none;
   background-image: url("../img/menu-close.svg");
 }

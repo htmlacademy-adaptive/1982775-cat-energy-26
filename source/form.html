@@ -10,6 +10,8 @@
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page">
@@ -23,10 +25,10 @@
       <img class="main-header__text-logo" src="img/logo/logo-text.svg" width="102" height="19" alt=""
         aria-hidden="true" />
     </a>
-    <button class="main-header__toggle" type="button">
+    <button class="main-header__toggle main-header__toggle--close" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--open">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
@@ -56,11 +58,13 @@
               <ul class="form__list-info">
                 <li class="form__item">
                   <label class="form__list-label" for="name">ИМЯ:*</label>
+                  <!-- Класс form__list-input-error для состояния input:error -->
                   <input class="form__list-input form__list-input--error" id="name" type="text" placeholder="барсик" required>
                 </li>
                 <li class="form__item">
                   <label class="form__list-label" for="weight">Вес (кг):*</label>
-                  <input class="form__list-input" id="weight" type="number" min="1" max="15" placeholder="7" required>
+                  <!-- Класс form__list-input-error для состояния input:error -->
+                  <input class="form__list-input form__list-input--error" id="weight" type="number" min="1" max="15" placeholder="7" required>
                 </li>
                 <li class="form__item">
                   <label class="form__list-label" for="age">Возраст (лет):</label>
@@ -95,15 +99,19 @@
               <ul class="form__contacts-list">
                 <li class="form__contact-item">
                   <label class="form__contact-label" for="email">E-mail:*</label>
+                  <!-- Класс form__contact-input-error для состояния input:error -->
                   <input class="form__contact-input form__contact-input--error" type="email" id="email" placeholder="кuklachev@gmail.com" required>
+                  <!-- Класс form__mail-svg-invalid для состояния invalid иконки -->
                   <svg class="form__mail-svg form__mail-svg--invalid" fill="none" width="18" height="13">
                     <use xlink:href="img/sprite.svg#mail"></use>
                   </svg>
                 </li>
                 <li class="form__contact-item">
                   <label class="form__contact-label" for="tel">Телефон:*</label>
-                  <input class="form__contact-input" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
-                  <svg class="form__phone-svg" width="20" height="20">
+                  <!-- Класс form__contact-input-error для состояния input:error -->
+                  <input class="form__contact-input form__contact-input--error" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+                  <!-- Класс form__phone-svg-invalid для состояния invalid иконки -->
+                  <svg class="form__phone-svg form__phone-svg--invalid" width="20" height="20">
                     <use xlink:href="img/sprite.svg#phone"></use>
                   </svg>
                 </li>
@@ -205,8 +213,8 @@
         </li>
       </ul>
       <div class="sponsor">
-        <a class="sponsor__text" href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">HTML Academy</a>
-        <a class="sponsor__logo" href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">
+        <a class="sponsor__text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">HTML Academy</a>
+        <a class="sponsor__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
           <svg class="sponsor__svg" width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-sponsor"></use>
           </svg>
